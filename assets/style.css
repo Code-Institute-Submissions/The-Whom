@@ -3,34 +3,33 @@
 header {
     width: 100%;
     position: relative;
+    
 
 }
 
+html,
 body {
-    display: flex;
-    min-height: 100%;
-    position: relative;
-    margin-bottom: 122px;
-
+    height: 100%;
+    margin: 0;
 }
 
 footer {
     border-top: black 3px solid;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     height: 122px;
     width: 100%;
-
 }
 
 a {
     color: white;
-    
+
 }
 
-.centering-box:hover {
-    cursor: pointer;
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 /*-------Header-----------*/
@@ -94,7 +93,7 @@ a {
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 2px;
-    
+
 }
 
 
@@ -111,27 +110,52 @@ a {
     text-decoration: underline
 }
 
+/*------Jumbotron---------*/
+
+.jumbotron {
+    margin: 0px;
+    padding: 0px;
+    height: 700px;
+    background-image: url(images/scooter.jpg);
+    
+}
+
+.wrapper {
+    box-sizing: border-box;
+    position: relative;
+    
+    min-height: 100%;
+}
+
+
+
+
+
+
+
+
+
 /*------Footer---------*/
 
 .social-links {
     text-align: center;
-    background-color: #cd0033 ;
+    background-color: #cd0033;
 
 }
 
 
 .social-links li {
     display: inline-block;
-    font-size: 40px;
+    font-size: 26px;
     margin: 5px;
     padding: 0px 28px;
-    
+
 }
 
 .footer-links {
     text-align: center;
     background-color: #000098;
-    
+
 }
 
 .footer-links li {
@@ -144,22 +168,22 @@ a {
 }
 
 
+
 .footer-link:hover {
     text-decoration: underline;
     color: #cd0033;
-    
+
 }
 
-.social-links i:hover {
-    color: black;
-}
-
-.fab:before {
-    color: white;
+.social-link:hover {
+    color: #000098;
 }
 
 
-
+.spacer {
+    height: 20px;
+    background-color: white;
+}
 
 
 
@@ -171,14 +195,12 @@ a {
 
 /*------Media queries---------*/
 
-/* header */
+@media (max-width: 611px) {
 
-@media (max-width:400px) {
-    
-    .menuitem {
-        max-width: 50%;
-
-
-
-
-/* footer */
+    .footer-links li span {
+        display: none;
+    }
+    .footer-links {
+        height: 47px;
+    }
+}
