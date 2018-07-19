@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Anton: 100,200,300,400,500,600,700,800|Crete+Round: 100,200,300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Anton: 100,200,300,400,500,600,700,800 | Crete+Round: 100,200,300,400,500,600,700,800 | Knewave: 100,200,300,400,500,600,700,800');
 
 header {
     width: 100%;
     position: relative;
-    
-
 }
 
 html,
 body {
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 footer {
@@ -24,12 +23,17 @@ footer {
 
 a {
     color: white;
-
 }
 
 ul {
     margin: 0;
     padding: 0;
+}
+
+.crete {
+    font-family: "Crete Round", sans-serif;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /*-------Header-----------*/
@@ -117,23 +121,55 @@ ul {
     padding: 0px;
     height: 700px;
     background-image: url(images/scooter.jpg);
-    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 .wrapper {
     box-sizing: border-box;
     position: relative;
-    
     min-height: 100%;
 }
 
+#generations-style {
+    font-family: "Knewave", sans-serif;
+    color: white;
+    font-size: 70px;
+    margin-top: 12px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.lead {
+    font-family: "Crete Round", sans-serif;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.link-to-generations:hover {
+    
+    -webkit-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
+    box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
+    -moz-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
+    -o-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
+}
+
+.jumbotron .container {
+    max-width: 50%;
+}
 
 
+.container a img {
+    margin-top: 26px;
+    border: 1px solid white;
+    
+}
 
-
-
-
-
+.positioning-box {
+    margin-top: 170px;
+    margin-left: -90px;
+}
 
 /*------Footer---------*/
 
@@ -203,4 +239,14 @@ ul {
     .footer-links {
         height: 47px;
     }
+
+.container {
+    margin-left: 24%;
+    
 }
+ #generations-style {
+     font-size: 61px;
+ }   
+    
+}
+
