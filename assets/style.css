@@ -148,7 +148,7 @@ ul {
 }
 
 .link-to-generations:hover {
-    
+
     -webkit-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
     box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
     -moz-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
@@ -163,13 +163,35 @@ ul {
 .container a img {
     margin-top: 26px;
     border: 1px solid white;
-    
+
 }
 
 .positioning-box {
     margin-top: 170px;
     margin-left: -90px;
 }
+
+/*------Hire us---------*/
+
+.hire-us {
+    height: 400px;
+    width: 100%;
+    background-color: #000098;
+    border: 30px solid white;
+    text-align: center;
+}
+
+.hire-us h1,h3 {
+    color: white;
+    font-family: "Anton", sans-serif;
+}
+
+.hire-us p a:hover {
+    text-decoration: underline;
+    color: #cd0033;
+    
+}
+
 
 /*------Footer---------*/
 
@@ -240,13 +262,27 @@ ul {
         height: 47px;
     }
 
-.container {
-    margin-left: 24%;
-    
-}
- #generations-style {
-     font-size: 61px;
- }   
-    
+    .container {
+        margin-left: 24%;
+
+    }
+    #generations-style {
+        font-size: 61px;
+    }
+    .container a img {
+        height: 150px;
+        width: 150px;
+        margin-left: 36px;
+    }
 }
 
+@media (max-width: 350px) {
+    #generations-style {
+        font-size: 50px;
+        margin-left: 9px;
+    }
+    .crete {
+        margin-left: 36px;
+    }
+
+}
