@@ -36,6 +36,20 @@ ul {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.anton {
+    font-family: "Anton", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.knewave {
+    font-family: "Knewave", sans-serif;
+    color: black;
+    text-align: center;
+}
+
 /*-------Header-----------*/
 
 .header row {
@@ -62,7 +76,7 @@ ul {
     max-width: 80%;
     height: 100px;
     width: auto;
-    
+
 
 }
 
@@ -108,7 +122,7 @@ ul {
 }
 
 .centering-box a i:hover {
-    color: rgba(0,0,0,0.50);
+    color: rgba(0, 0, 0, 0.50);
 }
 
 
@@ -151,7 +165,7 @@ ul {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.link-to-generations:hover {
+.red-hover:hover {
 
     -webkit-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
     box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
@@ -185,7 +199,8 @@ ul {
     text-align: center;
 }
 
-.hire-us h1,h3 {
+.hire-us h1,
+h3 {
     color: white;
     font-family: "Anton", sans-serif;
 }
@@ -193,31 +208,95 @@ ul {
 .hire-us p a:hover {
     text-decoration: underline;
     color: #cd0033;
-    
+
 }
+
 /*------Music---------*/
 
 .border-box {
     border: 20px solid #000098;
     height: 700px;
     width: 100%;
-    background-color: white; 
-    
-    }
+    background-color: white;
+    position: relative;
+    text-align: center;
+
+}
 
 .albums {
-    border: solid black 1px;
-    margin: 60px 112px;
-    
-    
+    margin-top: 15%;
 }
+
+/*------Generations---------*/
+
+.generations-section {
+    height: 972px;
+    width: 100%;
+    border: 20px solid #000098;
+}
+
+.generations-album {
+    height: 400px;
+    max-width: 100%;
+    margin: 3px;
+    border: solid 1px black;
+    display: inline-block;
+
+}
+
+table.generations-table {
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    border-collapse: collapse;
+    display: inline-block;
+    margin: 3px 5px;
+}
+
+table.generations-table td,
+table.generations-table th {
+    border: 1px solid #AAAAAA;
+    padding: 2px 10px;
+}
+
+table.generations-table tbody td {
+    font-size: 19px;
+}
+
+
+table.generations-table tfoot .links {
+    text-align: right;
+}
+
+table.generations-table tfoot .links a {
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.fa-itunes-note:before {
+
+    color: black;
+}
+
+.fa-amazon:before {
+
+    color: black;
+}
+
+.links-to-buy {
+    display: none;
+}
+
 
 /*------Footer---------*/
 
 .social-links {
     text-align: center;
     background-color: #cd0033;
-    
+
 
 }
 
@@ -316,5 +395,40 @@ ul {
 @media (max-width: 767px) {
     .border-box {
         height: 1945px;
+    }
+}
+
+@media (max-width: 767px) {
+    .border-box {
+        height: 1601px;
+    }
+}
+
+@media (max-width: 1196px) {
+    table.generations-table {
+        width: 100%;
+    }
+    .generations-section {
+        height: 1457px;
+
+    }
+    .generations-album {
+        width: 100%;
+    }
+}
+
+@media (max-width: 656px) {
+
+    .generations-section {
+        border: 2px solid #000098;
+    }
+
+    .links-to-buy {
+        display: inline-block;
+        transform: translateY(800px);
+        font-size: 40px;
+    }
+    .h {
+        display: none;
     }
 }
