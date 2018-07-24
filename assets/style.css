@@ -3,6 +3,7 @@
 header {
     width: 100%;
     position: relative;
+
 }
 
 html,
@@ -10,6 +11,7 @@ body {
     height: 100%;
     margin: 0;
     overflow-x: hidden;
+
 }
 
 footer {
@@ -34,6 +36,7 @@ ul {
     font-family: "Crete Round", sans-serif;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
 }
 
 .anton {
@@ -76,6 +79,7 @@ ul {
     max-width: 80%;
     height: 100px;
     width: auto;
+
 
 
 }
@@ -189,6 +193,13 @@ ul {
     margin-left: -90px;
 }
 
+.crete-jumbotron {
+    font-family: "Crete Round", sans-serif;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+
 /*------Hire us---------*/
 
 .hire-us {
@@ -197,6 +208,7 @@ ul {
     background-color: #000098;
     border: 30px solid white;
     text-align: center;
+    font-size: 17px;
 }
 
 .hire-us h1,
@@ -261,6 +273,7 @@ table.generations-table th {
 
 table.generations-table tbody td {
     font-size: 19px;
+
 }
 
 
@@ -289,6 +302,32 @@ table.generations-table tfoot .links a {
 .links-to-buy {
     display: none;
 }
+
+
+
+table.mobile-generations-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table.mobile-generations-table td,
+table.mobile-generations-table th {
+    border: 1px solid #000000;
+    padding: 4px 4px;
+}
+
+table.mobile-generations-table tbody td {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+table.mobile-generations-table tr:nth-child(odd) {
+    background: #000098;
+}
+
+
+
 
 
 /*------Footer---------*/
@@ -338,7 +377,7 @@ table.generations-table tfoot .links a {
 
 
 .spacer {
-    height: 20px;
+    height: 26px;
     background-color: white;
 }
 
@@ -373,6 +412,10 @@ table.generations-table tfoot .links a {
         width: 150px;
         margin-left: 36px;
     }
+    .hire-us {
+        border: 10px solid white;
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 350px) {
@@ -380,7 +423,7 @@ table.generations-table tfoot .links a {
         font-size: 50px;
         margin-left: 9px;
     }
-    .crete {
+    .crete-jumbotron {
         margin-left: 36px;
     }
 
@@ -398,11 +441,7 @@ table.generations-table tfoot .links a {
     }
 }
 
-@media (max-width: 767px) {
-    .border-box {
-        height: 1601px;
-    }
-}
+
 
 @media (max-width: 1196px) {
     table.generations-table {
@@ -420,15 +459,40 @@ table.generations-table tfoot .links a {
 @media (max-width: 656px) {
 
     .generations-section {
-        border: 2px solid #000098;
+        border: 4px solid #000098;
     }
 
     .links-to-buy {
-        display: inline-block;
-        transform: translateY(800px);
-        font-size: 40px;
+        display: table-cell;
+        font-size: 60px;
+        width: 656px;
+        text-align: center;
+
     }
+
+    .links-to-buy i {
+        margin: 5px 45px;
+    }
+
+
     .h {
         display: none;
     }
+
+    table.generations-table {
+        margin: 3px 0px;
+    }
+    table.generations-table {
+        display: none;
+    }
+    .generations-section {
+        height: 1765px;
+    }
+}
+
+@media (min-width: 656px) {
+    .mobile-generations-table {
+        display: none;
+    }
+
 }
