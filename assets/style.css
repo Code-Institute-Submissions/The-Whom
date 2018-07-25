@@ -63,7 +63,11 @@ ul {
     position: relative;
     border-bottom: 3px solid black;
     width: 100%;
-    padding: 0px 40px;
+    padding: 0px 24px;
+}
+
+.list-inline {
+    margin-left: -10px;
 }
 
 .centering-box {
@@ -146,6 +150,7 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    text-align: center;
 
 }
 
@@ -185,6 +190,7 @@ ul {
 .container a img {
     margin-top: 26px;
     border: 1px solid white;
+    transform: translateX(-118px);
 
 }
 
@@ -326,6 +332,39 @@ table.mobile-generations-table tr:nth-child(odd) {
     background: #000098;
 }
 
+/*------Photos---------*/
+
+.photo-container {
+    height: 5099px;
+    width: 100%;
+    border: solid 20px #000098;
+}
+
+.photo-container img {
+    padding: 20px;
+}
+
+figure img {
+    text-align: center;
+    vertical-align: top;
+    
+   
+}
+
+
+
+.photo-container figcaption {
+    text-align: center;
+    display: inline-block;
+    font-family: "Crete round", sans-serif;
+    font-size: 22px;
+    padding: 150px 0px;
+    margin-left: 66px;
+    border-bottom: solid #cd0033 2px;
+    
+}
+
+
 
 
 
@@ -400,7 +439,7 @@ table.mobile-generations-table tr:nth-child(odd) {
         height: 47px;
     }
 
-    .container {
+    .margin-for-mobile-centering {
         margin-left: 24%;
 
     }
@@ -411,6 +450,7 @@ table.mobile-generations-table tr:nth-child(odd) {
         height: 150px;
         width: 150px;
         margin-left: 36px;
+        transform: translateX(0px);
     }
     .hire-us {
         border: 10px solid white;
@@ -438,6 +478,17 @@ table.mobile-generations-table tr:nth-child(odd) {
 @media (max-width: 767px) {
     .border-box {
         height: 1945px;
+    }
+    .photo-container figcaption {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 766px) {
+    
+    .photo-container {
+        height: 4795px;
     }
 }
 
@@ -467,6 +518,7 @@ table.mobile-generations-table tr:nth-child(odd) {
         font-size: 60px;
         width: 656px;
         text-align: center;
+        padding-top: 11px;
 
     }
 
@@ -495,4 +547,10 @@ table.mobile-generations-table tr:nth-child(odd) {
         display: none;
     }
 
+}
+
+@media (max-width: 1360px) and (min-width:766px) {
+    .photo-container {
+        height: 4712px;
+    }
 }
