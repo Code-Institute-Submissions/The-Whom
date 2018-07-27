@@ -135,12 +135,12 @@ ul {
 .menuitem span:hover {
     text-decoration: underline;
     color: #cd0033;
-}
+    -o-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    -moz-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    -webkit-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    transition: color 0.2s, transition-timing-function ease-in-out;
 
-.centering-box a i:hover {
-    color: rgba(0, 0, 0, 0.50);
 }
-
 
 .active {
     /* remember to add this class to the item for each page to show user what they are on*/
@@ -182,13 +182,16 @@ ul {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.red-hover:hover {
 
-    -webkit-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
+.red-hover:hover {
     box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
-    -moz-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
-    -o-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56);
+    transition: box-shadow 0.3s, transition-timing-function ease-in-out;
+    -webkit-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56), -webkit-transition-timing-function box-shadow ease-in-out 0.5s;
+    -moz-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56), -webkit-transition-timing-function box-shadow ease-in-out 0.5s;
+    -o-box-shadow: 0px 0px 15px 16px rgba(205, 0, 51, 0.56), -webkit-transition-timing-function box-shadow ease-in-out 0.5s;
 }
+
+
 
 .jumbotron .container {
     max-width: 50%;
@@ -234,6 +237,10 @@ h3 {
 .hire-us p a:hover {
     text-decoration: underline;
     color: #cd0033;
+    -o-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    -moz-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    -webkit-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    transition: color 0.2s, transition-timing-function ease-in-out;
 
 }
 
@@ -496,11 +503,19 @@ figure img {
 .footer-link:hover {
     text-decoration: underline;
     color: #cd0033;
+    -o-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    -moz-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    -webkit-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    transition: color 0.2s, transition-timing-function ease-in-out;
 
 }
 
 .social-link:hover {
     color: #000098;
+    -o-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    -moz-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    -webkit-transition: color 0.2s, -webkit-transition-timing-function ease-in-out;
+    transition: color 0.2s, transition-timing-function ease-in-out;
 }
 
 .spacer {
@@ -560,7 +575,7 @@ figure img {
         margin: 0px 84px;
     }
     #seeker {
-        margin 0px 104px;
+        margin: 0px 104px;
     }
 }
 
