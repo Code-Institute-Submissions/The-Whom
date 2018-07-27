@@ -32,6 +32,10 @@ ul {
     padding: 0;
 }
 
+.row {
+    margin: 0px;
+}
+
 .crete {
     font-family: "Crete Round", sans-serif;
     color: white;
@@ -53,6 +57,10 @@ ul {
     text-align: center;
 }
 
+.list-inline {
+    margin-left: 0px;
+}
+
 /*-------Header-----------*/
 
 .header row {
@@ -64,10 +72,11 @@ ul {
     border-bottom: 3px solid black;
     width: 100%;
     padding: 0px 24px;
+    margin: 0px;
 }
 
 .list-inline {
-    margin-left: -10px;
+    margin-left: 0px;
 }
 
 .centering-box {
@@ -368,7 +377,7 @@ figure img {
 /*------Videos---------*/
 
 .video-container {
-    height: 1590px;
+    height: 1615px;
     width: 100%;
     border: solid 20px #000098;
     display: inline-block;
@@ -404,6 +413,50 @@ figure img {
 #seeker {
     margin: 0px 131px;
 }
+
+/*------Contact---------*/
+
+.contact-container {
+    border: solid 20px white;
+    background-color: #000098;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.center-form {
+    width: 50%;
+    text-align: center;
+}
+
+.button {
+    color: white;
+    background-color: #cd0033;
+    margin-top: 26px;
+}
+
+.crete-bl {
+    font-family: "Crete Round", sans-serif;
+    color: black;
+}
+.anton-wh {
+    font-family: "Anton", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+
+.smallprint {
+    font-size: 0.8em;
+    color: white;
+    margin-top: 26px;
+}
+
 
 /*------Footer---------*/
 
@@ -450,15 +503,11 @@ figure img {
     color: #000098;
 }
 
-
-
-
-
-
-
-
-
-
+.spacer {
+    background-color: white;
+    width: 100%;
+    height: 27px;
+}
 
 /*------Media queries---------*/
 
