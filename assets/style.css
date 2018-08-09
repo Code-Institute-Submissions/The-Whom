@@ -557,29 +557,6 @@ input:focus {
 
 /*------Media queries---------*/
 
-@media (max-width: 611px) {
-
-
-    .margin-for-mobile-centering {
-        margin-left: 24%;
-
-    }
-    #generations-style {
-        font-size: 61px;
-    }
-    .container a img {
-        height: 150px;
-        width: 150px;
-        margin-left: 36px;
-        transform: translateX(0px);
-    }
-    .hire-us {
-        border: 10px solid white;
-        font-size: 15px;
-    }
-    
-}
-
 @media (max-width: 350px) {
     #generations-style {
         font-size: 50px;
@@ -596,71 +573,25 @@ input:focus {
     }
 }
 
-@media (max-width: 991px) {
-    
-    .video-container {
-    height: 1496px;
-    }
-    
-    .video-container figcaption {
-        padding: 56px 0px;
-    }
-    
-}
+@media (max-width: 611px) {
 
+.margin-for-mobile-centering {
+        margin-left: 24%;
 
-@media (max-width: 992px) {
-    .border-box {
-        height: 700px;
     }
-    .contact-container {
-        height: 866px;
+    #generations-style {
+        font-size: 61px;
     }
-}
-
-@media (max-width: 767px) {
-    .border-box {
-        height: 1068px;
+    .container a img {
+        height: 150px;
+        width: 150px;
+        margin-left: 36px;
+        transform: translateX(0px);
     }
-    .photo-container figcaption {
-        margin: 36px 0px;
-        padding: 30px 0px;
+    .hire-us {
+        border: 10px solid white;
+        font-size: 15px;
     }
-}
-
-@media (max-width: 766px) {
-
-    .photo-container {
-        height: 5255px;
-    }
-    .video-container video {
-        max-width: 90%
-    }
-}
-
-@media (max-width: 668px) {
-    .footer-links li span {
-        display: none;
-    }
-    .footer-links {
-        height: 47px;
-    }
-}
-
-
-@media (max-width: 1199px) {
-    
-    table.generations-table {
-        width: auto;
-        transform:translateY(0px);
-        float: none;
-        
-    }
-    .generations-section {
-        height: 1457px;
-        text-align: center;
- }
- 
     
 }
 
@@ -692,6 +623,86 @@ input:focus {
     }
 }
 
+@media (max-width: 668px) {
+    .footer-links li span {
+        display: none;
+    }
+    .footer-links {
+        height: 47px;
+    }
+}
+
+@media (max-width: 766px) {
+
+    .photo-container {
+        height: 5255px;
+    }
+    .video-container video {
+        max-width: 90%
+    }
+}
+
+@media (max-width: 767px) {
+    .border-box {
+        height: 1068px;
+    }
+    .photo-container figcaption {
+        margin: 36px 0px;
+        padding: 30px 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    
+    .video-container {
+    height: 1496px;
+    }
+    
+    .video-container figcaption {
+        padding: 56px 0px;
+    }
+    
+}
+
+
+@media (max-width: 992px) {
+    .border-box {
+        height: 700px;
+    }
+    .contact-container {
+        height: 866px;
+    }
+}
+
+
+@media (max-width: 1360px) and (min-width:766px) {
+    .photo-container {
+        height: 4712px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1199px) {
+    
+    table.generations-table {
+        width: auto;
+        transform:translateY(0px);
+        float: none;
+        
+    }
+    .generations-section {
+        height: 1457px;
+        text-align: center;
+ }
+ 
+    
+}
+
+
+
 @media (min-width: 656px) {
     .mobile-generations-table {
         display: none;
@@ -699,11 +710,7 @@ input:focus {
 
 }
 
-@media (max-width: 1360px) and (min-width:766px) {
-    .photo-container {
-        height: 4712px;
-    }
-}
+
 
 @media (min-width: 1563px) {
 .photo-container {
