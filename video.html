@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000098" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Anton|Crete+Round|Knewave" rel="stylesheet">
@@ -13,25 +14,25 @@
 </head>
 
 <body>
-    <header>
-        <div class="row">
+    <header role="banner">
 
-            <div class="centering-box">
-                <a href="index.html">
+
+        <div class="centering-box">
+            <a href="index.html">
                     <img class="logo" src="assets/images/the_whom.png" alt="The Whom">
                 </a>
-            </div>
+        </div>
 
-            <div class="row">
-
-                <ul id="nav" class="list-inline clearfix nav-menu-style">
+        <div class="row">
+            <div class="container-fluid">
+                <ul id="nav" role="nav" class="list-inline container-fluid clearfix nav-menu-style">
 
                     <li class="col-xs-6 col-sm-3 col-md-3 col-lg-3 menuitem">
                         <a href="music.html" class=""><i class="fas fa-music"></i><span>Music</span></a>
                     </li>
 
                     <li class="col-xs-6 col-sm-3 col-md-3 col-lg-3 menuitem">
-                        <a href="video.html" class=""><i class="fas fa-video"></i><span class="active">Vidoes</span></a>
+                        <a href="video.html" class=""><i class="fas fa-video"></i><span class="active">Videos</span></a>
                     </li>
 
                     <li class="col-xs-6 col-sm-3 col-md-3 col-lg-3 menuitem">
@@ -44,37 +45,31 @@
 
 
                 </ul>
-
-
             </div>
+
+        </div>
         </div>
 
-        
+
     </header>
-    <section>
-        <div class="container video-container">
-            <div class="row">
+    <section role="main">
+        <div class="row">
+            <div class="video-container container" role="article">
 
-                <figure>
-                    <video width="auto" height="400px" controls>
-                        <source src="assets/videos/baba-o-mally.mp4" type="video/mp4">The Whom performing Baba 0'Mally
-                    </video>
-                    <figcaption class="">Performing Baba O'Mally<br>Live at the Outside lands<br>(San Franciso,2017)</figcaption>
+
+                <figure class="margin-video">
+                    <iframe class="col-xs-12 col-sm-12 col-md-6 col-lg-6" width="auto" height="400" src="https://www.youtube.com/embed/KHwHs9RwXYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <figcaption class="col-xs-12 col-sm-12 col-md-6 col-lg-6">Performing Baba O'Mally<br>Live at Hyde park<br>(London,2016)</figcaption>
                 </figure>
 
-                <figure>
-                    <video id="supply" width="711.11" height="400px" controls>
-                        <source src="assets/videos/supply-teacher.mp4" type="video/mp4">The Whom performing Supply Teacher
-                    </video>
-                    <figcaption id="supply-caption" class="">Performing Supply Teacher<br>(BBC studios, 1975)</figcaption>
+
+
+                <figure class="margin-video">
+                    <iframe class="col-xs-12 col-sm-12 col-md-6 col-lg-6" width="auto" height="400" src="https://www.youtube.com/embed/eswQl-hcvU0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <figcaption class="col-xs-12 col-sm-12 col-md-6 col-lg-6">Performing Supply Teacher<br>(BBC studios, 1975)</figcaption>
                 </figure>
 
-                <figure>
-                    <video width="auto" height="400px" controls>
-                        <source src="assets/videos/seeker.mp4" type="video/mp4">The Whom performing the Seeker 
-                    </video>
-                    <figcaption id="seeker">Performing the Seeker<br>Live at Leeds<br>(Leeds,2018)</figcaption>
-                </figure>
+
 
 
 
@@ -82,8 +77,9 @@
         </div>
     </section>
     <footer>
-        <div class="row ">
-            <ul class="social-links">
+        <div>
+
+            <ul class="social-links" role="links">
                 <li><a target="_blank" href="/"><i class="fab fa-facebook social-link"></i></a>
                 </li>
                 <li><a target="_blank" href="/"><i class="fab fa-youtube social-link"></i></a>
@@ -93,12 +89,12 @@
             </ul>
         </div>
 
-        <div class="row spacer">
+        <div class="spacer">
 
         </div>
 
-        <div class="row">
-            <ul class="footer-links list-inline clearfix">
+        <div>
+            <ul class="footer-links list-inline clearfix" role="nav">
                 <li><a href="index.html"><span class="footer-link">Home</span></a>
                 </li>
                 <li><a href="music.html"><span class="footer-link">Music</span></a>

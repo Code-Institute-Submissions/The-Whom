@@ -5,8 +5,12 @@ header {
     position: relative;
 
 }
+html {
+    max-height: 100%;
 
-html,
+    
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -53,8 +57,15 @@ ul {
 
 .knewave {
     font-family: "Knewave", sans-serif;
-    color: black;
+    color: white;
+    font-size: 40px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     text-align: center;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
 }
 
 .list-inline {
@@ -194,7 +205,7 @@ ul {
 
 
 .jumbotron .container {
-    max-width: 50%;
+    max-width: 80%;
 }
 
 
@@ -248,7 +259,7 @@ h3 {
 
 .border-box {
     border: 20px solid #000098;
-    height: 700px;
+    height: 500px;
     width: 100%;
     background-color: white;
     position: relative;
@@ -268,22 +279,32 @@ h3 {
     border: 20px solid #000098;
 }
 
+.generations-section h1 {
+    margin-bottom: 25px;
+}
+
 .generations-album {
-    height: 400px;
+    height: 450px;
     max-width: 100%;
-    margin: 3px;
+    
     border: solid 1px black;
     display: inline-block;
 
 }
+.container:after {
+    display: inline-block;
+}
 
 table.generations-table {
-    width: 40%;
+    
     height: 100px;
     text-align: center;
     border-collapse: collapse;
     display: inline-block;
     margin: 3px 5px;
+    float: right;
+    transform: translateY(-453px);
+    
 }
 
 table.generations-table td,
@@ -350,7 +371,7 @@ table.mobile-generations-table tr:nth-child(odd) {
 /*------Photos---------*/
 
 .photo-container {
-    height: 5099px;
+    height: 5420px;
     width: 100%;
     border: solid 20px #000098;
 }
@@ -383,24 +404,28 @@ figure img {
 /*------Videos---------*/
 
 .video-container {
-    height: 1615px;
+    height: 1000px;
     width: 100%;
     border: solid 20px #000098;
     display: inline-block;
     vertical-align: middle;
 }
 
-.video-container figure {}
+.margin-video {
+    margin: 12px;
+    
+}
+
 
 .video-container figcaption {
     text-align: center;
     display: inline-block;
     font-family: "Crete round", sans-serif;
     font-size: 22px;
-    padding: 60px 0px;
-    margin: 0px 117px;
+    padding: 167px 0px;
+    margin-bottom: 60px;
     border-bottom: solid #cd0033 2px;
-    transform: translateY(-284px);
+    
 }
 
 .video-container video {
@@ -408,17 +433,9 @@ figure img {
     max-width: 94%
 }
 
-#supply {
-    margin: 0px 17px;
-}
 
-#supply-caption {
-    margin: 49px 109px;
-}
 
-#seeker {
-    margin: 0px 131px;
-}
+
 
 /*------Contact---------*/
 
@@ -433,6 +450,7 @@ figure img {
 .container-fluid {
     padding: 0px;
 }
+
 
 .center-form {
     width: 50%;
@@ -458,12 +476,25 @@ figure img {
     text-align: center;
 }
 
+.form-control {
+    margin: 10px;
+}
+
 .smallprint {
     font-size: 0.8em;
     color: #DCDCDC;
     margin-top: 26px;
 }
 
+input:focus {
+    background-color: #cd0033;
+    color: white;
+}
+.center-form label {
+    color: white;
+    font-family: "Crete Round", sans-serif;
+    
+}
 
 /*------Footer---------*/
 
@@ -528,12 +559,6 @@ figure img {
 
 @media (max-width: 611px) {
 
-    .footer-links li span {
-        display: none;
-    }
-    .footer-links {
-        height: 47px;
-    }
 
     .margin-for-mobile-centering {
         margin-left: 24%;
@@ -552,6 +577,7 @@ figure img {
         border: 10px solid white;
         font-size: 15px;
     }
+    
 }
 
 @media (max-width: 350px) {
@@ -570,54 +596,72 @@ figure img {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 991px) {
+    
+    .video-container {
+    height: 1496px;
+    }
+    
     .video-container figcaption {
-        margin: 0px 84px;
+        padding: 56px 0px;
     }
-    #seeker {
-        margin: 0px 104px;
-    }
+    
 }
+
 
 @media (max-width: 992px) {
     .border-box {
-        height: 980px;
+        height: 700px;
+    }
+    .contact-container {
+        height: 866px;
     }
 }
 
 @media (max-width: 767px) {
     .border-box {
-        height: 1945px;
+        height: 1068px;
     }
     .photo-container figcaption {
-        margin: 0;
-        padding: 0;
+        margin: 36px 0px;
+        padding: 30px 0px;
     }
 }
 
 @media (max-width: 766px) {
 
     .photo-container {
-        height: 4795px;
+        height: 5255px;
     }
     .video-container video {
         max-width: 90%
     }
 }
 
+@media (max-width: 668px) {
+    .footer-links li span {
+        display: none;
+    }
+    .footer-links {
+        height: 47px;
+    }
+}
 
 
-@media (max-width: 1196px) {
+@media (max-width: 1199px) {
+    
     table.generations-table {
-        width: 100%;
+        width: auto;
+        transform:translateY(0px);
+        float: none;
+        
     }
     .generations-section {
         height: 1457px;
-
-    }
-    .generations-album {
-        width: 100%;
-    }
+        text-align: center;
+ }
+ 
+    
 }
 
 @media (max-width: 656px) {
@@ -639,19 +683,12 @@ figure img {
         margin: 5px 45px;
     }
 
-
-    .h {
-        display: none;
-    }
-
-    table.generations-table {
-        margin: 3px 0px;
-    }
+   
     table.generations-table {
         display: none;
     }
     .generations-section {
-        height: 1765px;
+        height: 1838px;
     }
 }
 
@@ -668,23 +705,11 @@ figure img {
     }
 }
 
-@media (max-width: 1454px) and (min-width:1277) {
-    .video-container figcaption {
-        transform: translateY(-218px);
-
-    }
-
+@media (min-width: 1563px) {
+.photo-container {
+    height: 9000px;
 }
-
-@media (max-width:1277px) {
-    .video-container figcaption {
-        transform: translateY(0px);
-    }
-    .video-container {
-        height: 2341px;
-    }
-    .video-container video {
-        width: 92%;
-    }
-
+.border-box {
+    height:800px;
+}
 }

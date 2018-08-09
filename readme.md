@@ -125,6 +125,6 @@ layout and look of the pages
 In addition to testing after each new component was added, other more through testing was
 conducted at the end of the competition of each major stage (i.e: creation of header, footer, and the section areas for each page)
 
-Testing consisted of: checking the validity of the code and the behaviour of each element across all screen sizes.
+Testing consisted of: checking the validity of the code (using W3C [HTML](https://validator.w3.org) and [CSS](https://jigsaw.w3.org/css-validator/) validator) and the behaviour of each element across all screen sizes.
 
 Final checks were conducted at the end of the project, to ensure all was working as expected.
