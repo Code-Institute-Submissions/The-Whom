@@ -1,16 +1,17 @@
 # The Whom
 
 ### Project description
-This website was created to showcase the music of The Whom, 
+This website was created to showcase the music and talents of The Whom, 
 an original 1960's rock band, that has performed domestically and 
-internationally for over 50 years. 
+internationally for over 50 years. This is a proof of concept, and is front-end only,
+therefore certain external links do not currently function (these are detailed below).
 
 This websites provides fans with the ability to:
 
    * listen to The Whom's albums (past albums and any future releases),
 they will also be able to buy the tracks/albums via the provided links.
 
-   * Watch vidoes of concerts, private venues and music videos
+   * Watch videos of concerts, private venues and music videos
 
    * See photos of past events, concerts and even exclusive looks behind stage
 
@@ -23,7 +24,7 @@ for private venues (such as festivals, weddings, parties, e.t.c)
 
 #### General navigation
 
-The menus at the top and bottom of the page provide navgation to each page of the website (details on how to access each page are summarised below)
+The menus at the top and bottom of the page provide navigation to each page of the website (details on how to access each page are summarized below)
 
 **NOTE**: the bottom menu is only present on medium to larger screens (611px and above)
 
@@ -39,7 +40,7 @@ The reach out section provides a little background on the band and invites users
 #### To listen to music
 
 
-1. Click on the **music** navbar item (at the top or bottom of the page)
+1. Click on the **music** navigation bar item (at the top or bottom of the page)
 2. This will take you to the **music** page, click on the album that you want to listen to
 3. Then you will arrive at a the **album** page, with the album artwork on the left
 and the songs on the right, along with links to buy on itunes and amazon
@@ -50,17 +51,17 @@ and the links to buy below
 **NOTE**: currently only the "Generations" album page has currently been deployed
 , with only the song "our generation" currently available for listening
 
-#### To Watch vidoes
+#### To Watch videos
 
-1. Click on the **videos** navbar item (at the top or bottom of the page)
+1. Click on the **videos** navigation bar item (at the top or bottom of the page)
 2. This will take you to the **videos** page.
 3. Videos are displayed along the left, with short descriptions on the right
-   * On mobile screens the vidoes will appear on top, with the descriptions below
-4. CLick on the play button on the desired video to view.
+   * On mobile screens the videos will appear on top, with the descriptions below
+4. Click on the play button on the desired video to view.
 
 #### To view photos 
 
-1. Click on the **photos** navbar item (at the top or bottom of the page)
+1. Click on the **photos** navigation bar item (at the top or bottom of the page)
 2. This will take you to the **photos** page
 3. photos are displayed along the left, with short descriptions along the right.
    * On mobile screens the pictures appear on top, with the descriptions below
@@ -74,7 +75,7 @@ respective icons on the bottom of each page.
 
 #### To contact the group
 
-1. Click on the **contact** navbar item (at the top or bottom of the page)
+1. Click on the **contact** navigation bar item (at the top or bottom of the page)
 2. This will take you to the **contact** page
 3. Please provide all the following details in their respective boxes:
    * Full name
@@ -83,7 +84,7 @@ respective icons on the bottom of each page.
    * details about your requirements (i.e: type of event, duration, song requests, e.t.c)
 4. Once information has been provided, click on the "send" button to submit.
 
-We aim to reply to all submitted contact requests within 48 hours. However, if you do not recieve
+We aim to reply to all submitted contact requests within 48 hours. However, if you do not receive
 a reply within this time, please re-submit your request. 
 
 **NOTE**: this time frame **excludes** bank holidays and weekends
@@ -100,31 +101,50 @@ a reply within this time, please re-submit your request.
 
 ##### Deployment 
 
-The project was deployed in several stages:
+The project was uploaded to the github pages (via [git](https://git-scm.com)).
+Github was updated with each addition of major content, i.e: with the creation of:
+-  the header
+-  the footer
+-  each page addition (music page, video page, e.t.c)
+-  after each testing and improvement 
 
-1. Initial planning stage, concentrating on the guidelines provided, which were
- *to create a website that could showcase the media of the band, allow fans to hire them
-and even to contact the band via their social media*
-
-2. Refinement of the requirements and the creation of wireframes, to provide a basis for the 
-layout and look of the pages
-
-3. Creation/collection of all text, images, videos and photos used for the website 
-
-4. Writing the code begins with them creation of the repeated elements, i.e: the footer and the header
-
-5. Then each page was created in turn, re-using the same header and footer, adding in the specific content for each page
- (Pages were created in the follwing order: index, music, generations (album page), vidoes, photos and finally contact.)
-
-6. Final thorough testing of the pages was then conducted accross all screen sizes
-
-7. Finally, the readme.md page was written and added.
+To run the code, simply open using any web browser.
 
 ##### Testing
 
 In addition to testing after each new component was added, other more through testing was
 conducted at the end of the competition of each major stage (i.e: creation of header, footer, and the section areas for each page)
 
-Testing consisted of: checking the validity of the code (using W3C [HTML](https://validator.w3.org) and [CSS](https://jigsaw.w3.org/css-validator/) validator) and the behaviour of each element across all screen sizes.
+Testing consisted of: checking the validity of the code (using W3C [HTML](https://validator.w3.org) and [CSS](https://jigsaw.w3.org/css-validator/) validator) and the behavior of each element across all screen sizes.
 
-Final checks were conducted at the end of the project, to ensure all was working as expected.
+After, google’s developer tools were used to audit the site, using both mobile and desktop audits.
+
+Final checks were conducted by several independent people at the end of the project, to ensure all was working as expected and the user experience was uniform.
+
+Layout is similar across all screen sizes, with the following differences between mobile and desktop resolutions detailed below:
+
+- Footer links disappear on mobile screens
+- Music page: albums appear vertically aligned on mobile, rather than horizontal on desktop
+- within each album page (ex: generations), the album list and where to buy are displayed to the right on desktop, whilst being below on mobile 
+- Photo page: pictures appear with captions to the right on desktop, whilst appearing below on mobile
+
+
+### Credits
+
+##### Text
+All text is original and produced by myself, in accordance with the requirements provided by the client.
+
+##### Media
+
+Videos were taken from [youtube](www.youtube.com)
+
+Photos for the album covers were sourced from [pinterest](https://www.pinterest.co.uk)
+All other photos were sourced from [google images](https://images.google.com)
+
+##### Acknowledgements
+
+I received inspiration for this project from the band ["The Who"](https://en.wikipedia.org/wiki/The_Who).
+The original layout was inspired by the band ["Iron Maiden's"](https://en.wikipedia.org/wiki/Iron_Maiden) 2014 website, as seen [here](http://www.phoenixstudios.co.uk/blog/2014/11/25/20-best-band-musician-websites/) (no.13)
+
+
+
