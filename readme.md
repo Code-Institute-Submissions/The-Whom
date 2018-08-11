@@ -139,6 +139,7 @@ All text is original and produced by myself, in accordance with the requirements
 Videos were taken from [youtube](www.youtube.com)
 
 Photos for the album covers were sourced from [pinterest](https://www.pinterest.co.uk)
+The bands banner logo was created by myself. <br>
 All other photos were sourced from [google images](https://images.google.com)
 
 ##### Acknowledgements
