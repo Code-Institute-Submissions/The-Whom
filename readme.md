@@ -95,6 +95,7 @@ a reply within this time, please re-submit your request.
 * [Bootstrap framework (v 3.3.7)](https://getbootstrap.com/docs/3.3/getting-started/) was used to **structure** the page and add components (ex: forms, button, navigation items, e.t.c)
 * [Fontawesome](https://fontawesome.com) icons were used for **social media links** and **navigation icons**
 * [Google fonts](https://fonts.google.com) were used on all **text** (i.e: [Knewave](https://fonts.google.com/specimen/Knewave), [Anton](https://fonts.google.com/specimen/Anton) and [crete round](https://fonts.google.com/specimen/Crete+Round)
+* [Minify code](http://minifycode.com/html-minifier/) HTML and CSS code minifier was used 
  
 
 ### Deployment and testing
